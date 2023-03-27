@@ -1,0 +1,53 @@
+a {
+  text-decoration: none;
+  color: #4472b5;
+}
+.home-bluer {
+  background-color: #e3e3e340;
+  height: 100vh;
+}
+.logo{
+  width: 60px;
+}
+.logo-header{
+  color: #4472b5;
+    font-weight: 700;
+    margin-left: -10px;
+    font-size: 20px;
+    display: inline-block;
+    margin-bottom: 0;
+}
+.lock{
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.address-input{
+  width: 100%;
+  padding: 7px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #4472b5;
+}
+.unlocked{
+  font-size: 45px;
+  margin-top: 10px;
+  margin-left: -20px;
+}
+.locked{
+  font-size: 45px;
+  margin-top: 10px;
+  margin-left: -20px;
+}
+.p-relative{
+  position: relative;
+}
+.input-spinner{
+  position: absolute;
+  top: 52%;
+  width: 27px;
+  height: 27px;
+  right: 2%;
+}

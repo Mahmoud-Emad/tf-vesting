@@ -32,12 +32,6 @@ module.exports = {
     'no-alert': 'error',
     // enforce a maximum line length
     'max-len': [ 'error', { 'code': 120, 'ignoreRegExpLiterals': true } ],
-    // enforce consistent spacing inside parentheses
-    'space-in-parens': [ 'error', 'always' ],
-    // enforce consistent spacing inside brackets
-    'array-bracket-spacing': [ 'error', 'always' ],
-    // enforce consistent spacing before and after keywords
-    'keyword-spacing': [ 'error', { 'before': true, 'after': true } ],
     // enforce consistent indentation
     'indent': [ 'error', 2 ],
     // disallow the use of var
