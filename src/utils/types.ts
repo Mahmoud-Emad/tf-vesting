@@ -19,3 +19,8 @@ export type OnResponseVestingAccounts = {
   vesting_accounts: Array<VestingAccount>;
   Error: string;
 };
+
+export type OnSelectAddress = {
+    address?: string;
+    isSelected?: boolean;
+}

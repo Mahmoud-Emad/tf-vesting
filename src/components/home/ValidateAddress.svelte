@@ -43,9 +43,14 @@
 
 <section>
   <div class="container">
-    <div class="lock mt-5">
+    <div class="lock">
+      <div class="alert w-100 mb-4 text-start">
+        <h4>
+          First Screen | <span class="text-primary">Address Activation</span>
+        </h4>
+      </div>
       <div class="row w-100">
-        <div class="col-8">
+        <div class="col-8 p-relative">
           <Input
             bind:value={addressValue}
             label="Address"
@@ -70,11 +75,7 @@
           {/if}
         </div>
         <div class="col-4 d-flex align-items-center p-relative">
-          {#if vestingAccounts && !vestingAccounts.Error}
-            <i class="fa-solid fa-lock-open unlocked" />
-          {:else}
-            <i class="fa-solid fa-lock locked" />
-          {/if}
+          <i class="fas fa-address-card address-card" />
         </div>
         <small class="pl-2">
           <span class="text-danger">*</span>

@@ -33,15 +33,18 @@ a {
 }
 .unlocked{
   font-size: 45px;
-  margin-top: 10px;
-  margin-left: -20px;
+  margin-top: 30px;
+  margin-left: -15px;
   color: #648ac1;
 }
 .locked{
   font-size: 45px;
-  margin-top: 10px;
-  margin-left: -20px;
+  margin-top: 30px;
+  margin-left: -15px;
   color: #648ac1;
+}
+.text-primary{
+  color: #4472b5 !important;
 }
 .p-relative{
   position: relative;
@@ -71,4 +74,10 @@ a {
 .custom-invalid-feedback{
   right: 37.8%!important;
   margin-top: -0.9rem!important;
+}
+.address-card{
+  font-size: 45px;
+  margin-top: 25px;
+  margin-left: -15px;
+  color: #648ac1;
 }

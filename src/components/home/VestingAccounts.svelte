@@ -1,7 +1,14 @@
 <script lang="ts">
+  import { activatePKStore } from '../../utils/stores';
   import type { OnResponseVestingAccounts } from '../../utils/types';
 
   export let vestingAccounts: OnResponseVestingAccounts;
+  const activatePrivateKey = () => {
+    activatePKStore.set({
+      address: vestingAccounts.vesting_accounts[0].address,
+      isSelected: true,
+    });
+  };
 </script>
 
 <section class="mt-5">
@@ -14,7 +21,9 @@
             <div class="card">
               <div class="card-body">
                 <p class="mb-4">{account.address}</p>
-                <button class="use-btn">Use This Address</button>
+                <button class="use-btn" on:click={activatePrivateKey}
+                  >Use This Address</button
+                >
               </div>
             </div>
           </div>
