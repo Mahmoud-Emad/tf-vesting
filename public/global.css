@@ -49,12 +49,13 @@ a {
 .p-relative{
   position: relative;
 }
-.input-spinner{
+.input-spinner {
   position: absolute;
-  top: 52%;
-  width: 27px;
-  height: 27px;
+  top: 58%;
+  width: 20px;
+  height: 20px;
   right: 2%;
+  color: #648ac1;
 }
 .use-btn{
   width: 100%;
@@ -80,4 +81,7 @@ a {
   margin-top: 25px;
   margin-left: -15px;
   color: #648ac1;
+}
+.form-control:focus{
+  box-shadow: none;
 }

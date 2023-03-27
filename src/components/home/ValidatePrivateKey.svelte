@@ -6,10 +6,19 @@
 
   let privateKeyValue: string;
   let isLoading: boolean;
+  let isSigned: boolean;
 
   const onKeypress = (e) => {
+    if (e.keyCode === 13) {
+      if (validatePrivateKey(privateKeyValue).isValid) {
+        isLoading = true;
+        isSigned = true;
+      }
+    }
     console.log(e);
   };
+
+  $: privateKeyValue, (isSigned = false);
 </script>
 
 <div class="container">
@@ -27,7 +36,7 @@
       <div class="col-8">
         <Input
           bind:value={privateKeyValue}
-          label="Private Key"
+          label="Wallet Private Key"
           validation={validatePrivateKey}
           className={'pk-input'}
           bind:isLoading
@@ -42,8 +51,11 @@
         {/if}
       </div>
       <div class="col-4">
-        <i class="fa-solid fa-lock locked" />
-        <!-- <i class="fa-solid fa-lock-open unlocked" /> -->
+        {#if isSigned}
+          <i class="fa-solid fa-lock-open unlocked" />
+        {:else}
+          <i class="fa-solid fa-lock locked" />
+        {/if}
       </div>
     </div>
   </div>

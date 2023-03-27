@@ -1,8 +1,10 @@
 <section>
   <div class="row">
     <div class="col-6">
-      <img src="/assets/threefold-logo.png" class="logo" alt="" />
-      <p class="logo-header">TF-Vesting</p>
+      <a href="/">
+        <img src="/assets/threefold-logo.png" class="logo" alt="" />
+        <p class="logo-header">TF-Vesting</p>
+      </a>
     </div>
     <div class="col-6 links d-flex align-items-center">
       <a class="p-3" href="https://www.threefold.io/">ThreeFold</a>

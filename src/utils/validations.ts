@@ -31,9 +31,10 @@ export const validateAddress = (
   }
 };
 
-export const validatePrivateKey = () => {
+export const validatePrivateKey = (value: string) => {
+  console.log( value );  
   return {
-    isValid: false,
+    isValid: true,
     errorMessage: 'Please enter a valid private key.',
   };
 };

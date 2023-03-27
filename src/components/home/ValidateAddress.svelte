@@ -53,7 +53,7 @@
         <div class="col-8 p-relative">
           <Input
             bind:value={addressValue}
-            label="Address"
+            label="Wallet Address"
             validation={validateAddress}
             className={'address-input'}
             bind:isLoading
