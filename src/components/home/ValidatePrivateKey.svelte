@@ -7,7 +7,9 @@
   let privateKeyValue: string;
   let isLoading: boolean;
 
-  const onKeypress = (e) => {};
+  const onKeypress = (e) => {
+    console.log(e);
+  };
 </script>
 
 <div class="container">

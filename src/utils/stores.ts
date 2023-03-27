@@ -1,4 +1,4 @@
 import { writable } from 'svelte/store';
-import type { AlertType } from './types';
+import type { AlertType, OnSelectAddress } from './types';
 export const alertStore = writable<AlertType>({});
-export const activatePKStore = writable<boolean>(false);
+export const activatePKStore = writable<OnSelectAddress>({});

@@ -21,6 +21,6 @@ export type OnResponseVestingAccounts = {
 };
 
 export type OnSelectAddress = {
-    address?: string;
-    isSelected?: boolean;
-}
+  address?: string;
+  isSelected?: boolean;
+};
