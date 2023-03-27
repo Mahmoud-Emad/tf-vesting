@@ -1,12 +1,22 @@
 import type { InputValidationsType } from './types';
 import { StrKey } from 'stellar-sdk';
 
-export const validateAddress = (value: string): InputValidationsType => {
+export const validateAddress = (
+  value: string,
+  noAddresses?: boolean,
+): InputValidationsType => {
   if (value === '') {
     return {
       isValid: false,
       errorMessage: 'Address is required!',
     };
+  }
+  if (noAddresses) {
+    return {
+      isValid: false,
+      errorMessage: 'Seems to be no linked address found.',
+    };
+    // 'Seems to be no linked address found.'
   }
   if (!StrKey.isValidEd25519PublicKey(value)) {
     return {
